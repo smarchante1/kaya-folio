@@ -1,12 +1,12 @@
-import React from "react";
-import clsx from "clsx";
+import React from 'react';
+import clsx from 'clsx';
 
-import Link from "@docusaurus/Link";
-import useBaseUrl from "@docusaurus/useBaseUrl";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import Layout from "@theme/Layout";
+import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Layout from '@theme/Layout';
 
-import styles from "./styles.module.css";
+import styles from './styles.module.css';
 
 function About() {
   const context = useDocusaurusContext();
@@ -22,50 +22,50 @@ function About() {
           <div>
             <img
               className={styles.aboutProfilePic}
-              src={useBaseUrl("img/profilepic.jpg")}
+              src={useBaseUrl('img/profilepic.jpg')}
             />
           </div>
           <div class={styles.aboutText}>
-            <h2>Hello,</h2>
+            <h2>Hey there!,</h2>
             <p>
-              I am Evan, a Full Stack Software Engineer and Certified Cloud
-              Engineer based in Singapore.
+              My name's Stephanie, and I'm a Software Engineer and Developer
+              Documentation Author based out of Los Angeles, CA.
             </p>
             <p>
               I love building cool, fun and meaningful things with tech, whether
-              that be{" "}
-              <Link to={useBaseUrl("projects/")}>
+              that be{' '}
+              <Link to={useBaseUrl('projects/')}>
                 websites, applications or games
               </Link>
               . To me, coding is the closest thing to magic we have in this
               world.
             </p>
             <p>
-              I was a{" "}
+              I was a{' '}
               <a href="https://www.comp.nus.edu.sg/programmes/ug/cs/">
                 Computer Science major
-              </a>{" "}
-              at the{" "}
+              </a>{' '}
+              at the{' '}
               <a href="https://www.comp.nus.edu.sg/">
                 National University of Singapore
-              </a>{" "}
+              </a>{' '}
               from 2017 to 2020. During my time there, I was the Deputy Head of
-              Technology at{" "}
+              Technology at{' '}
               <a href="https://dscnustech.github.io/">
                 Google Developer Student Club NUS
               </a>
-              , and the President of the{" "}
+              , and the President of the{' '}
               <a href="https://www.instagram.com/nusskating/">
                 NUS Skating Club
               </a>
-              . I was also a{" "}
+              . I was also a{' '}
               <a href="https://github.com/DigiPie/CS1010-Tutorial-C09">
                 Teaching Assistant
-              </a>{" "}
+              </a>{' '}
               for Programming Methodology and Networking courses.
             </p>
             <p>
-              I am currently working at <a href="https://padlet.com">Padlet</a>{" "}
+              I am currently working at <a href="https://padlet.com">Padlet</a>{' '}
               as a Full Stack and Support Engineer.
             </p>
           </div>
@@ -77,7 +77,7 @@ function About() {
               <div className="pagination-nav__item">
                 <Link
                   className="pagination-nav__link"
-                  to={useBaseUrl("projects/")}
+                  to={useBaseUrl('projects/')}
                 >
                   <div className="pagination-nav__sublabel">Check out</div>
                   <div className="pagination-nav__label">My projects</div>
@@ -86,7 +86,7 @@ function About() {
               <div className="pagination-nav__item pagination-nav__item--next">
                 <a
                   className="pagination-nav__link"
-                  href={useBaseUrl("pdf/resume.pdf")}
+                  href={useBaseUrl('pdf/resume.pdf')}
                 >
                   <div className="pagination-nav__sublabel">Download</div>
                   <div className="pagination-nav__label">My resume</div>

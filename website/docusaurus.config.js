@@ -1,87 +1,87 @@
-const math = require("remark-math");
-const katex = require("rehype-katex");
+const math = require('remark-math');
+const katex = require('rehype-katex');
 
 const internetProfiles = {
   linkedin: {
-    label: "LinkedIn",
-    href: "https://www.linkedin.com/in/evanitsg/",
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/stephanie-marchante-06a531180/',
   },
   github: {
-    label: "GitHub",
-    href: "https://github.com/digipie",
+    label: 'GitHub',
+    href: 'https://github.com/smarchante1',
   },
   email: {
-    label: "Email",
-    href: "mailto:evan.it.sg@gmail.com",
+    label: 'Email',
+    href: 'mailto:smarcha04@gmail.com',
   },
   blog: {
-    label: "Blog",
-    to: "blog",
+    label: 'Blog',
+    to: 'blog',
   },
   docs: {
-    label: "Documentation",
-    to: "docs",
+    label: 'Documentation',
+    to: 'docs',
   },
   projects: {
-    label: "Projects",
-    to: "projects",
+    label: 'Projects',
+    to: 'projects',
   },
   about: {
-    label: "About",
-    to: "about",
+    label: 'About',
+    to: 'about',
   },
   resume: {
-    label: "Resume",
-    href: "https://evantay.com/pdf/resume.pdf",
+    label: 'Resume',
+    href: 'https://evantay.com/pdf/resume.pdf',
   },
 };
 
 module.exports = {
-  title: "Evan Tay",
+  title: 'Stephanie Marchante',
   tagline:
-    "I am a Software Engineer and Cloud Engineer passionate about solving Meaningful Problems.",
-  url: "https://evantay.com",
-  baseUrl: "/",
-  onBrokenLinks: "throw",
-  favicon: "img/logo.png",
-  organizationName: "digipie",
-  projectName: "kaya-folio",
+    'I am a Software Engineer and Developer Educator who loves simplifying developer workflows with great docs.',
+  url: 'https://evantay.com',
+  baseUrl: '/',
+  onBrokenLinks: 'throw',
+  favicon: 'img/logo.png',
+  organizationName: 'digipie',
+  projectName: 'kaya-folio',
   themeConfig: {
     colorMode: {
-      defaultMode: "dark",
+      defaultMode: 'dark',
       disableSwitch: true,
       respectPrefersColorScheme: false,
     },
     navbar: {
       hideOnScroll: true,
-      title: "Evan Tay",
+      title: 'Stephanie Marchante',
       logo: {
-        alt: "Evan Tay",
-        src: "img/logo.png",
-        href: "https://evantay.com",
-        target: "_self",
+        alt: 'Stephanie Marchante',
+        src: 'img/logo.png',
+        href: 'https://evantay.com',
+        target: '_self',
       },
       items: [
-        { to: "blog/", label: "Blog", position: "left" },
+        { to: 'blog/', label: 'Blog', position: 'left' },
         {
-          to: "docs/",
-          activeBasePath: "docs",
-          label: "Docs",
-          position: "left",
+          to: 'docs/',
+          activeBasePath: 'docs',
+          label: 'Docs',
+          position: 'left',
         },
-        { to: "projects/", label: "Projects", position: "right" },
-        { to: "about/", label: "About", position: "right" },
+        { to: 'projects/', label: 'Projects', position: 'right' },
+        { to: 'about/', label: 'About', position: 'right' },
         {
-          href: "https://evantay.com/pdf/resume.pdf",
-          label: "Resume",
-          position: "right",
+          href: 'https://evantay.com/pdf/resume.pdf',
+          label: 'Resume',
+          position: 'right',
         },
       ],
     },
     footer: {
       links: [
         {
-          title: "Connect",
+          title: 'Connect',
           items: [
             internetProfiles.linkedin,
             internetProfiles.github,
@@ -89,7 +89,7 @@ module.exports = {
           ],
         },
         {
-          title: "Discover",
+          title: 'Discover',
           items: [
             internetProfiles.blog,
             internetProfiles.docs,
@@ -105,10 +105,10 @@ module.exports = {
   },
   presets: [
     [
-      "@docusaurus/preset-classic",
+      '@docusaurus/preset-classic',
       {
         docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
+          sidebarPath: require.resolve('./sidebars.js'),
           disableVersioning: false,
           editCurrentVersion: false,
           remarkPlugins: [math],
@@ -117,21 +117,21 @@ module.exports = {
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl: "https://github.com/DigiPie/kaya-folio/tree/main/website/",
+          editUrl: 'https://github.com/DigiPie/kaya-folio/tree/main/website/',
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: require.resolve('./src/css/custom.css'),
         },
       },
     ],
   ],
   stylesheets: [
     {
-      href: "https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css",
-      type: "text/css",
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css',
+      type: 'text/css',
       integrity:
-        "sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X",
-      crossorigin: "anonymous",
+        'sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X',
+      crossorigin: 'anonymous',
     },
   ],
 };
